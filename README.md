@@ -1,8 +1,8 @@
 dotfiles
 ========
 
-This is a collection of .config files from the home directory on my MacBook. It
-currently includes my Bash `.profile` and MacVim `.vimrc` and `.gvimrc`.
+This is a collection of .config files from the home directories of my systems.
+It currently includes my Bash `.profile` and (Mac|G)Vim `.vimrc` and `.gvimrc`.
 
 To use, clone the repository and then symlink the relevant files into your home
 directory.
