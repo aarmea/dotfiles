@@ -20,3 +20,6 @@ set guioptions-=L
 set guioptions-=r
 set guioptions-=R
 set guioptions-=b
+
+" No toolbar
+set guioptions-=T
