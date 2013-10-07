@@ -35,3 +35,5 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'xolox/vim-session'
 
 Bundle 'groenewege/vim-less'
+
+Bundle 'markcornick/vim-vagrant'
