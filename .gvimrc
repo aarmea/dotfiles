@@ -1,7 +1,7 @@
-" Use the Solarized color scheme
-Bundle 'altercation/vim-colors-solarized'
+" Use the Monokai color scheme
+Bundle 'lsdr/monokai'
 set background=dark
-colorscheme solarized
+colorscheme monokai
 
 " Use the Source Code Pro font
 " http://blogs.adobe.com/typblography/2012/09/source-code-pro.html
