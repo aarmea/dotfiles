@@ -15,7 +15,12 @@ alias dbus='launchctl load -w /Library/LaunchAgents/org.freedesktop.dbus-session
 alias acpi='pmset -g ps'
 
 # List TODOs in a directory, from http://www.reddit.com/r/programming/comments/1eypwa/programmer_interrupted_thoughts_and_science_on/ca5444d
-alias todos="fgrep -r -n -I 'TODO' *"
+# If we have The Silver Searcher, use that instead.
+if command -v ag >/dev/null 2>&1; then
+  alias todos="ag TODO"
+else
+  alias todos="fgrep -r -n -I 'TODO' *"
+fi
 
 ##
 # Your previous /Users/aarmea/.bash_profile file was backed up as /Users/aarmea/.bash_profile.macports-saved_2012-08-09_at_12:30:30
