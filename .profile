@@ -1,3 +1,30 @@
+# Local binaries and scripts
+export PATH="$HOME/bin:$PATH"
+
+# Android SDK
+export PATH="$PATH:/Applications/adt-bundle-mac-x86_64/sdk/platform-tools"
+
+# Pebble SDK
+export PATH="~/arm-cs-tools/bin:$PATH"
+
+# Node.js modules
+export PATH="$PATH:/opt/local/lib/node_modules"
+
+# SALSA stuff, http://wcl.cs.rpi.edu/salsa/
+export SWPATH=~/Apps/
+export SALSAPATH=$SWPATH/Salsa
+export SALSAVER=1.1.5
+export SALSAOPTS 
+# SALSA 1.x aliases
+alias salsac='java -cp $SALSAPATH/salsa$SALSAVER.jar:. salsac.SalsaCompiler *.salsa; javac -classpath $SALSAPATH/salsa$SALSAVER.jar:. *.java'
+alias salsa='java -cp $SALSAPATH/salsa$SALSAVER.jar:. $SALSAOPTS'
+alias wwcns='java -cp $SALSAPATH/salsa$SALSAVER.jar:. wwc.naming.WWCNamingServer'
+alias wwctheater='java -cp $SALSAPATH/salsa$SALSAVER.jar:. $SALSAOPTS wwc.messaging.Theater'
+
+# MacPorts Installer addition on 2013-03-23_at_23:42:20: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
 # iTunes rsync
 alias rsync-itunes-from-server='rsync -avz -e ssh subsonic@home.albertarmea.com:~/music/iTunes ~/Music'
 alias rsync-itunes-to-server='while ! rsync -av ~/Music/iTunes/ -e ssh subsonic@home.albertarmea.com:~/music/iTunes; do echo "Something went wrong, restarting rsync"; done'
@@ -48,31 +75,3 @@ alias qmakefiles='qmake -spec macx-g++'
 
 # `find` alias to quickly find files
 alias ff='find . -name'
-
-# Local binaries and scripts
-export PATH="$HOME/bin:$PATH"
-
-# Android SDK
-export PATH="$PATH:/Applications/adt-bundle-mac-x86_64/sdk/platform-tools"
-
-# Pebble SDK
-export PATH="~/arm-cs-tools/bin:$PATH"
-
-# Node.js modules
-export PATH="$PATH:/opt/local/lib/node_modules"
-
-# SALSA stuff, http://wcl.cs.rpi.edu/salsa/
-export SWPATH=~/Apps/
-export SALSAPATH=$SWPATH/Salsa
-export SALSAVER=1.1.5
-export SALSAOPTS 
-# SALSA 1.x aliases
-alias salsac='java -cp $SALSAPATH/salsa$SALSAVER.jar:. salsac.SalsaCompiler *.salsa; javac -classpath $SALSAPATH/salsa$SALSAVER.jar:. *.java'
-alias salsa='java -cp $SALSAPATH/salsa$SALSAVER.jar:. $SALSAOPTS'
-alias wwcns='java -cp $SALSAPATH/salsa$SALSAVER.jar:. wwc.naming.WWCNamingServer'
-alias wwctheater='java -cp $SALSAPATH/salsa$SALSAVER.jar:. $SALSAOPTS wwc.messaging.Theater'
-
-# MacPorts Installer addition on 2013-03-23_at_23:42:20: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
