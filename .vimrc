@@ -12,6 +12,10 @@ set ruler
 " Because Mac terminals don't know how to backspace
 set bs=2
 
+" :w!! so you don't have to open vim with sudo
+" https://stackoverflow.com/questions/2600783/how-does-the-vim-write-with-sudo-trick-work#7078429
+cmap w!! w !sudo tee > /dev/null %
+
 " Vundle init
 filetype off
 set rtp+=~/.vim/bundle/vundle/
