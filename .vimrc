@@ -37,6 +37,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'bronson/vim-trailing-whitespace'
 
 Bundle 'xolox/vim-session'
+let g:session_autosave = 'no'
 
 Bundle 'groenewege/vim-less'
 
