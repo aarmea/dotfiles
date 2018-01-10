@@ -1,8 +1,5 @@
 syntax on
 set number
-set expandtab
-set shiftwidth=2
-set softtabstop=2
 set mouse=a
 set splitright
 set ls=2
@@ -42,3 +39,5 @@ let g:session_autosave = 'no'
 Bundle 'groenewege/vim-less'
 
 Bundle 'markcornick/vim-vagrant'
+
+Bundle 'tpope/vim-sleuth'
