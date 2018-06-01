@@ -42,3 +42,6 @@ Bundle 'groenewege/vim-less'
 Bundle 'markcornick/vim-vagrant'
 
 Bundle 'tpope/vim-sleuth'
+
+Bundle 'mileszs/ack.vim'
+let g:ackprg = 'ag --vimgrep'
