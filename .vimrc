@@ -25,7 +25,7 @@ filetype plugin indent on
 
 Bundle 'vim-misc'
 
-Bundle 'kien/ctrlp.vim'
+Bundle 'ctrlpvim/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
@@ -42,3 +42,6 @@ Bundle 'groenewege/vim-less'
 Bundle 'markcornick/vim-vagrant'
 
 Bundle 'tpope/vim-sleuth'
+
+Bundle 'mileszs/ack.vim'
+let g:ackprg = 'ag --vimgrep'
